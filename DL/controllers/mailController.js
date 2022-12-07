@@ -65,7 +65,88 @@ const sendPassword = async (req, res) => {
     }
 }
 
-module.exports = { sendPassword }
+const contactUs = async (req, res) => {
+
+    console.log("mailController contactUs:", req.body)
+    const { fromEmail, fromUserName, subject, title, message, creatorId } = req.body
+
+    console.log(subject, title, message)
+
+    try {
+
+        if (subject === "" || title === "" || message === "") return res.status(400).json({ message: "Required information is missing!!!" })
+
+        const existingUser = await userModel.findOne({ _id: creatorId })
+
+        if (!existingUser) return res.status(404).json({ message: "User does't exist!!!" })
+
+        if (fromEmail !== "" && fromUserName !== "") {
+            if (existingUser.email !== fromEmail || existingUser.userName !== fromUserName) return res.status(400).json({ message: "Wrong Data!!!" })
+        }
+
+        const mailTransporter = nodemailer.createTransport({
+            service: 'gmail',
+            host: 'smtp.gmail.com',
+            auth: {
+                user: SHARE_FOOD_MAIL,
+                pass: GMAIL_PASS
+            }
+        })
+
+        const details = {
+            from: existingUser.email,
+            to: SHARE_FOOD_MAIL,
+            subject: `${subject}`,
+            html: `
+        <spam>Mail from <b>${existingUser.name}</b>,</spam>
+        <spam>e-mail: <b>${existingUser.email}</b>,</spam>
+        <p>${title}</p>
+        <p>${message}</p>
+        `, // html body
+
+        }
+
+        const details2 = {
+            from: SHARE_FOOD_MAIL,
+            to: existingUser.email,
+            subject: `We got a message from you`,
+            html: `
+        <spam>Dear <b>${existingUser.name}</b>,</spam>
+        <p>We received next mail from you:</p>
+        <p>Subject: ${subject}</p>
+        <p>Title: ${title}</p>
+        <p>Message: ${message}</p>
+        <p>We will response to your mail as fast as we can.</p>
+        <p>Thank's for contact Us</p>
+        <p>Share Food Team</p>
+        
+        `, // html body
+
+        }
+
+        mailTransporter.sendMail(details, () => mailStatus())
+        mailTransporter.sendMail(details2, () => mailStatus())
+
+        const mailStatus = (err) => {
+            if (err) {
+                console.log('====================================');
+                console.log("it has an error", err);
+                console.log('====================================');
+            } else {
+                console.log('====================================');
+                console.log("E-mail sent");
+                console.log('====================================');
+            }
+        }
+
+        res.status(200).json(existingUser)
+    } catch (error) {
+        res.status(500).json({ message: "Something went wrong!!!" })
+
+    }
+}
+
+module.exports = { sendPassword, contactUs }
 
 
 // const MailSlurp = require('mailslurp-client').default

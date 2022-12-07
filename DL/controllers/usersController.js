@@ -6,11 +6,27 @@ const JWT_SECRET = process.env.JWT_SECRET
 
 const userModel = require("../../DL/models/userModel")
 
+const getUserInfo = async (req, res) => {
+    const { _id } = req.params
+
+    console.log(_id);
+
+    try {
+        const userInfo = await userModel.findOne({ _id }).populate('eventsId').populate('mealsId').populate('recipesId')
+
+        res.status(200).json({ result: userInfo })
+
+    } catch (error) {
+        res.status(500).json({ message: "getUserInfo: Something went wrong!!!" })
+
+    }
+}
+
 const signIn = async (req, res) => {
     const { email, password, userName } = req.body
 
     try {
-        const existingUser = await userModel.findOne({ email })
+        const existingUser = await userModel.findOne({ email }).populate('eventsId').populate('mealsId').populate('recipesId')
 
         if (!existingUser) return res.status(404).json({ message: "User does't exist!!!" })
 
@@ -121,4 +137,4 @@ const userProfileUpdate = async (req, res) => {
 }
 
 
-module.exports = { signIn, signUp, changePassword, userProfile, userProfileUpdate }
+module.exports = { signIn, signUp, changePassword, userProfile, userProfileUpdate, getUserInfo }

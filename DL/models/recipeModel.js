@@ -1,7 +1,11 @@
 const mongoose = require('mongoose')
 
+// const userModel = require("../../DL/models/userModel")
+
 const recipeSchema = new mongoose.Schema({
     creatorId: {
+        // type: mongoose.Schema.Types.ObjectId,
+        // ref: userModel,
         type: String,
         required: true
     },
@@ -58,6 +62,21 @@ const recipeSchema = new mongoose.Schema({
         type: String,
         enum: ['private', 'public'],
     },
+    freeText: {
+        type: String,
+    },
+    recipeComments: [{
+        commentCreator: String,
+        comment: {
+            type: String,
+            required: true
+        }
+    }],
+    isDeleted: {
+        type: Boolean,
+        default: false
+    }
+
 })
 
 const PostRecipe = mongoose.model("PostRecipe", recipeSchema)

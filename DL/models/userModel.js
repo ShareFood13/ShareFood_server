@@ -1,5 +1,11 @@
 const mongoose = require('mongoose')
 
+const PostMeal = require('../models/mealModel.js')
+const PostEvent = require('../models/eventModel.js')
+const PostRecipe = require('../models/recipeModel.js')
+
+
+
 const userSchema = new mongoose.Schema({
     name: {
         type: String,
@@ -32,7 +38,23 @@ const userSchema = new mongoose.Schema({
         type: String,
         enum: ['private', 'public'],
     },
-    id: { type: String }
+    mealsId: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: PostMeal,
+    }],
+    eventsId: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: PostEvent,
+    }],
+    recipesId: [{
+        type: mongoose.Schema.Types.ObjectId,
+        ref: PostRecipe,
+    }],
+    id: { type: String },
+    status: {
+        type: String,
+        enum: ['private', 'public'],
+    },
 })
 
 const User = mongoose.model("User", userSchema)
