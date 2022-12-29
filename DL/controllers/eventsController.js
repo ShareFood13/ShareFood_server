@@ -6,11 +6,11 @@ const userModel = require("../../DL/models/userModel")
 
 const createEvent = async (req, res) => {
     const event = req.body
-    console.log(event);
     const newEvent = new PostEvent({ ...event })
-
+    console.log(newEvent)
     try {
         const result = await newEvent.save()
+        console.log("result", result);
 
         await userModel.findByIdAndUpdate(event.creatorId, { $push: { eventsId: result._id } })
 

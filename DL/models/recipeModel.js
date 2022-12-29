@@ -62,16 +62,15 @@ const recipeSchema = new mongoose.Schema({
         type: String,
         enum: ['private', 'public'],
     },
-    freeText: {
-        type: String,
-    },
-    recipeComments: [{
-        commentCreator: String,
-        comment: {
-            type: String,
-            required: true
-        }
-    }],
+    // freeText: {
+    //     type: String,
+    // },
+    // recipeComments: [{
+    //     commentCreator: String,
+    //     comment: {
+    //         type: String,
+    //     }
+    // }],
     isDeleted: {
         type: Boolean,
         default: false

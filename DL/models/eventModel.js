@@ -11,7 +11,7 @@ const eventSchema = new mongoose.Schema({
         type: Date,
         default: Date.now
     },
-    name: {
+    eventName: {
         type: String,
         required: true
     },
@@ -19,11 +19,11 @@ const eventSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    date: {
+    eventDate: {
         type: String,
         required: true
     },
-    time: {
+    eventTime: {
         type: String,
         required: true
     },
@@ -49,7 +49,7 @@ const eventSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ['private', 'public'],
+        enum: ['Private', 'Public'],
     },
 })
 
