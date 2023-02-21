@@ -60,11 +60,11 @@ const recipeSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ['private', 'public'],
+        enum: ['Private', 'Public'],
     },
-    // freeText: {
-    //     type: String,
-    // },
+    freeText: {
+        type: String,
+    },
     // recipeComments: [{
     //     commentCreator: String,
     //     comment: {

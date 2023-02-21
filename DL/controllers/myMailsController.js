@@ -6,12 +6,13 @@ const PostMyMail = require('../models/myMailsModel.js')
 
 const createMyMail = async (req, res) => {
 
-    const myMail = req.body
+    const { mail } = req.body
 
-    console.log(myMail);
+    console.log(mail);
     try {
 
-        const newMyMail = new PostMyMail({ ...myMail })
+        const newMyMail = new PostMyMail(mail)
+        console.log(newMyMail);
 
         const result = await newMyMail.save()
 
@@ -20,9 +21,9 @@ const createMyMail = async (req, res) => {
         console.log("result", result)
         // console.log("result2", result2)
 
-        res.status(201).json({ myMail: result, message: "Mail Sended!!!" })
+        res.status(201).json({ myMail: result, message: "👍 Mail Sended!!!" })
     } catch (error) {
-        res.status(409).json({ message: "createMyMail failed!!!" })
+        res.status(409).json({ message: "👎 createMyMail failed!!!" })
     }
 }
 
@@ -34,11 +35,12 @@ const getMyMails = async (req, res) => {
 
     try {
         const myMails = await PostMyMail.find({ reciverId: id })
+        console.log("myMails", myMails);
 
         res.status(200).json({ myMails: myMails })
 
     } catch (error) {
-        res.status(404).json({ message: "getMyMails failure" })
+        res.status(404).json({ message: "👎 getMyMails failure" })
     }
 }
 
@@ -54,7 +56,7 @@ const getSendedMails = async (req, res) => {
         res.status(200).json({ sendedMails: sendedMails })
 
     } catch (error) {
-        res.status(404).json({ message: "getSendedMails failure" })
+        res.status(404).json({ message: "👎 getSendedMails failure" })
     }
 }
 
@@ -68,9 +70,10 @@ const delMyMail = async (req, res) => {
 
         await PostMyMail.findByIdAndUpdate(id, { isDeleted: true }, { new: true })
 
-        res.status(200).json({ message: "Mail deleted!!!" })
+        res.status(200).json({ message: "👍 Mail deleted!!!" })
     } catch (error) {
-        res.status(404).json({ message: "delMyMail failure" })
+
+        res.status(404).json({ message: "👎 delMyMail failure" })
     }
 }
 

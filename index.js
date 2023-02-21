@@ -6,10 +6,17 @@ const bodyParser = require('body-parser')
 const cors = require('cors')
 
 const app = express()
-app.use(bodyParser.json({ limit: "30mb", extended: true }))
-app.use(bodyParser.urlencoded({ limits: "30mb", extended: true }))
+app.use(bodyParser.json({ limit: "200mb" })) //, extended: true 
+app.use(bodyParser.urlencoded({ limits: "200mb", extended: true })) //, parameterLimit: 1000000
 app.use(cors())
-app.use(express.json())
+// app.use(express.json())
+
+app.use(express.json({
+    verify: (req, res, buf) => {
+        req.rawBody = buf.toString()
+    },
+    limit: "200mb"
+}));
 
 
 PORT = process.env.PORT || 3000

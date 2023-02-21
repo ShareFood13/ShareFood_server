@@ -36,7 +36,7 @@ const userSchema = new mongoose.Schema({
     },
     status: {
         type: String,
-        enum: ['private', 'public'],
+        enum: ['Private', 'Public'],
     },
     mealsId: [{
         type: mongoose.Schema.Types.ObjectId,
@@ -51,10 +51,49 @@ const userSchema = new mongoose.Schema({
         ref: PostRecipe,
     }],
     id: { type: String },
-    status: {
-        type: String,
-        enum: ['private', 'public'],
-    },
+    profile: {
+        name: String,
+        userName: String,
+        birthDate: String,
+        email: String,
+        phone: {
+            countryCode: String,
+            phoneNumber: String,
+        },
+        gender: String,
+        globalStatus: String,
+        dietaryRestrictions: [String],
+        profession: String,
+        favoriteFood: String,
+        favoriteRestaurants: String,
+        cookingSkills: String,
+        mealPreferences: String,
+        foodInterests: String,
+        personalDescription: String,
+        profilePicture: {
+            path: String,
+            base64: String,
+        },
+        backgroundPicture: {
+            path: String,
+            base64: String,
+        },
+        fullAddress: {
+            address: String,
+            addNumber: String,
+            country: String,
+            zipCode: String,
+        },
+        socialMediaHandles: {
+            instagram: String,
+            tiktok: String,
+            facebook: String,
+            pinterest: String,
+            blog: String
+        },
+        following: [String],
+        followers: [String]
+    }
 })
 
 const User = mongoose.model("User", userSchema)

@@ -14,10 +14,13 @@ const createMeal = async (req, res) => {
 
         const result = await newMeal.save()
 
-        await userModel.findByIdAndUpdate(meal.creatorId, { $push: { mealsId: result._id } })
+        await userModel.findByIdAndUpdate(meal.creatorId, { $push: { mealsId: { $each: [result._id] } } })
 
-        res.status(201).json(result)
+        const myMeals = await PostMeal.find({ creatorId: meal.creatorId })
+
+        res.status(201).json({ meals: myMeals, message: "👍 Meal Created!!!" })
     } catch (error) {
+
         res.status(409).json({ message: error.message })
     }
 }
@@ -26,13 +29,13 @@ const getMeals = async (req, res) => {
 
     const { id } = req.params
 
-    console.log(id)
     try {
-        const myMeals = await PostMeal.find({ creatorId: id }).populate("recipesId")
+        const myMeals = await PostMeal.find({ creatorId: id })//.populate("recipesId")
 
-        res.status(200).json(myMeals)
+        res.status(200).json({ meals: myMeals })
 
     } catch (error) {
+
         res.status(404).json({ message: error.message })
     }
 }
@@ -42,15 +45,18 @@ const updateMeal = async (req, res) => {
     const { _id } = req.params
 
     try {
+
         if (!mongoose.Types.ObjectId.isValid(_id)) return res.status(404).send("No Meal with That ID")
 
         const updatedMeal = { ...req.body, _id: _id }
 
-        const result = await PostMeal.findByIdAndUpdate(_id, updatedMeal, { new: true })
+        await PostMeal.findByIdAndUpdate(_id, updatedMeal, { new: true })
 
-        res.status(200).json(result)
+        const myMeals = await PostMeal.find({ creatorId: _id })
 
+        res.status(200).json({ meals: myMeals, message: "👍 Meal Updated!!!" })
     } catch (error) {
+
         res.status(400).json({ message: error.message })
     }
 }
@@ -62,11 +68,16 @@ const delMeal = async (req, res) => {
     if (!mongoose.Types.ObjectId.isValid(_id)) return res.status(404).send("No Post with That ID")
 
     try {
-        await PostMeal.findByIdAndUpdate(_id, { isDeleted: true }, { new: true })
 
-        res.status(200).json({ message: "Meal deleted successfully" })
+        const result = await PostMeal.findByIdAndUpdate(_id, { isDeleted: true }, { new: true })
 
+        await userModel.findByIdAndUpdate(result.creatorId, { $pull: { mealsId: result._id } })
+
+        const myMeals = await PostMeal.find({ creatorId: _id })
+
+        res.status(200).json({ meals: myMeals, message: "👍 Meal deleted successfully" })
     } catch (error) {
+
         res.status(400).json({ message: error.message })
     }
 }

@@ -36,5 +36,5 @@ const myMailsSchema = new mongoose.Schema({
 
 })
 
-const MyMailsSchema = mongoose.model("MyMailsSchema", myMailsSchema)
+const MyMailsSchema = mongoose.model("PostMyMails", myMailsSchema)
 module.exports = MyMailsSchema

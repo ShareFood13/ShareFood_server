@@ -9,10 +9,8 @@ const userModel = require("../../DL/models/userModel")
 const getUserInfo = async (req, res) => {
     const { _id } = req.params
 
-    console.log(_id);
-
     try {
-        const userInfo = await userModel.findOne({ _id }).populate('eventsId').populate('mealsId').populate('recipesId')
+        const userInfo = await userModel.findOne({ _id: _id }).populate('eventsId').populate('mealsId').populate('recipesId')
 
         res.status(200).json({ result: userInfo })
 
@@ -26,7 +24,7 @@ const signIn = async (req, res) => {
     const { email, password, userName } = req.body
 
     try {
-        const existingUser = await userModel.findOne({ email }).populate('eventsId').populate('mealsId').populate('recipesId')
+        const existingUser = await userModel.findOne({ email })//.populate('eventsId').populate('mealsId') //.populate('recipesId')
 
         if (!existingUser) return res.status(404).json({ message: "User does't exist!!!" })
 
@@ -43,7 +41,7 @@ const signIn = async (req, res) => {
         res.status(200).json({ result: existingUser, token })
 
     } catch (error) {
-        res.status(500).json({ message: "Something went wrong!!!" })
+        res.status(500).json({ message: "👎 Something went wrong!!!" })
     }
 
 }
@@ -68,8 +66,8 @@ const signUp = async (req, res) => {
 
         res.status(200).json({ result, token })
     } catch (error) {
-        res.status(500).json({ message: "Something went wrong!!!" })
 
+        res.status(500).json({ message: "👎 Something went wrong!!!" })
     }
 }
 
@@ -115,26 +113,108 @@ const changePassword = async (req, res) => {
 
         const token = jwt.sign({ email: result.email, id: result._id }, JWT_SECRET, {})
 
-        res.status(200).json({ result, token })
+        res.status(200).json({ result, token, message2: "👍 Password changed!!!" })
     } catch (error) {
-        res.status(500).json({ message: "Something went wrong!!!" })
 
+        res.status(500).json({ message: "👎 Something went wrong!!!" })
     }
 }
 
 const userProfile = async (req, res) => {
-    const { id } = req.params
-    console.log('====================================');
-    console.log("userprofile", req.body);
-    console.log('====================================');
+    const { _id } = req.params
+    // console.log('====================================');
+    // console.log("userProfile _id", _id);
+    // console.log("userprofile req.body", req.body);
+    // console.log('====================================');
+
+    try {
+        const user = await userModel.findOne({ _id })
+
+        // console.log("user", user)
+
+        const updateUser = { user, name: req.body.name, profile: req.body }
+        // console.log("updateUser", updateUser)
+
+        const result = await userModel.findByIdAndUpdate(_id, updateUser, { new: true })
+
+        res.status(200).json({ result, message: "👍 Profile saved!!!!" })
+    } catch (error) {
+
+        res.status(500).json({ message: error })
+        // res.status(500).json({ message: "👎 Something went wrong!!!" })
+    }
 }
 
 const userProfileUpdate = async (req, res) => {
-    const { id } = req.params
+    const { _id } = req.params
     console.log('====================================');
     console.log("userprofile", req.body, id);
     console.log('====================================');
 }
 
+const getOtherUsers = async (req, res) => {
 
-module.exports = { signIn, signUp, changePassword, userProfile, userProfileUpdate, getUserInfo }
+    const { _id } = req.params
+
+    try {
+
+        const otherUsers = await userModel.find({ _id: { $ne: _id } })
+
+        // console.log("usersController getOtherUsers", otherUsers)
+
+        res.status(200).json({ otherUsers })
+    } catch (error) {
+
+        res.status(500).json({ message: "👎 Something went wrong!!!" })
+    }
+}
+
+const startFollowing = async (req, res) => {
+    const { userId, follow_id } = req.body
+    var otherUser = ""
+    var user = ""
+
+    try {
+
+        const result = await userModel.findById({ _id: userId })
+
+        if (!result.profile.following.includes(follow_id)) {
+            user = await userModel.findByIdAndUpdate(userId, { $push: { 'profile.following': { $each: [follow_id] } } })
+        }
+
+
+        const result2 = await userModel.findById({ _id: follow_id })
+
+        if (!result2.profile.followers.includes(userId)) {
+            otherUser = await userModel.findByIdAndUpdate(follow_id, { $push: { 'profile.followers': { $each: [userId] } } })
+        }
+
+        res.status(200).json({ result: user, message: `👍 You start follow ${otherUser.userName}!!!!` })
+    } catch (error) {
+
+        res.status(500).json({ message: "👎 Something went wrong!!!" })
+    }
+}
+
+const stopFollowing = async (req, res) => {
+
+    const { my_id, follow_id } = req.params
+    console.log({ my_id, follow_id })
+
+
+    // try {
+
+    //     const otherUsers = await userModel.find({ _id: { $ne: _id } })
+
+    //     // console.log("usersController getOtherUsers", otherUsers)
+
+    //     res.status(200).json({ otherUsers })
+    // } catch (error) {
+
+    //     res.status(500).json({ message: "👎 Something went wrong!!!" })
+    // }
+}
+
+
+
+module.exports = { signIn, signUp, changePassword, userProfile, userProfileUpdate, getUserInfo, getOtherUsers, startFollowing, stopFollowing }

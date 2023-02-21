@@ -58,9 +58,9 @@ const sendPassword = async (req, res) => {
             }
         })
 
-        res.status(200).json(existingUser)
+        res.status(200).json({ password: existingUser.password.split('.')[0].slice(0, 10), message: "👍 Mail sent!!!" })
     } catch (error) {
-        res.status(500).json({ message: "Something went wrong!!!" })
+        res.status(500).json({ message: "👎 Something went wrong!!!" })
 
     }
 }

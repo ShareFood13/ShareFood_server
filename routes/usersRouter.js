@@ -12,12 +12,16 @@ router.post("/signup", userController.signUp)
 router.put("/changepassword", userController.changePassword)
 router.get("/getUser/:_id", auth, userController.getUserInfo)
 
+router.get("/getotherusers/:_id", auth, userController.getOtherUsers)
+router.put("/startfollowing", auth, userController.startFollowing)
+router.put("/stopfollowing", auth, userController.stopFollowing)
+
 router.post("/sendpassword", mailController.sendPassword)
 router.post("/contactus", mailController.contactUs)
 
 
-router.post("/userprofile/:id", userController.userProfile)
-router.put("/userprofileupdate/:id", userController.userProfileUpdate)
+router.put("/userprofile/:_id", userController.userProfile)
+router.put("/userprofileupdate/:_id", userController.userProfileUpdate)
 
 
 module.exports = router
