@@ -124,7 +124,7 @@ const userProfile = async (req, res) => {
     const { _id } = req.params
     // console.log('====================================');
     // console.log("userProfile _id", _id);
-    // console.log("userprofile req.body", req.body);
+    console.log("userprofile req.body", req.body);
     // console.log('====================================');
 
     try {
@@ -132,7 +132,7 @@ const userProfile = async (req, res) => {
 
         // console.log("user", user)
 
-        const updateUser = { user, name: req.body.name, profile: req.body }
+        const updateUser = { user, name: req.body.name, profile: req.body.profile }
         // console.log("updateUser", updateUser)
 
         const result = await userModel.findByIdAndUpdate(_id, updateUser, { new: true })

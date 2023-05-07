@@ -20,21 +20,25 @@ const recipeSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    recipePicture: [{
-        base64: { type: String },
-        path: { type: String },
-    }],
+    // recipePicture: [{
+    //     base64: { type: String },
+    //     path: { type: String },
+    // }],
+    recipePicture: {
+        normal: [String],
+        small: [String]
+    },
     prepTime: {
-        type: Number,
+        type: String,
     },
     cookTime: {
-        type: Number,
+        type: String,
     },
     difficulty: {
         type: String,
     },
     forHowMany: {
-        type: Number,
+        type: String,
     },
     specialDiet: [
         String
@@ -61,6 +65,9 @@ const recipeSchema = new mongoose.Schema({
     status: {
         type: String,
         enum: ['Private', 'Public'],
+    },
+    foodCourse: {
+        type: String,
     },
     freeText: {
         type: String,

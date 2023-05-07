@@ -7,6 +7,7 @@ const { auth } = require('../middleware/auth.js')
 
 router.post('/', auth, recipesController.createRecipe)
 router.get('/:id', auth, recipesController.getMyRecipes)
+router.get('/detail/:id', auth, recipesController.getRecipe)
 router.patch("/:id", auth, recipesController.updateRecipe)
 router.delete('/:id', auth, recipesController.delRecipe)
 router.get("/getotherrecipes", auth, recipesController.getOtherRecipes)

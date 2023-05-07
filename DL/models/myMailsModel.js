@@ -27,9 +27,14 @@ const myMailsSchema = new mongoose.Schema({
     },
     date: {
         type: Date,
+        // default: new Date()
         default: Date.now
     },
     isDeleted: {
+        type: Boolean,
+        default: false
+    },
+    isOpen: {
         type: Boolean,
         default: false
     }

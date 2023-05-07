@@ -7,6 +7,7 @@ const { auth } = require('../middleware/auth.js')
 
 router.post('/', auth, myMailsController.createMyMail)
 router.get('/:id', auth, myMailsController.getMyMails)
-router.delete('/:id', auth, myMailsController.delMyMail)
+router.put('/:id', auth, myMailsController.delMyMail)
+router.put('/mailView/:id', auth, myMailsController.mailView)
 
 module.exports = router
