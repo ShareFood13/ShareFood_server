@@ -1,0 +1,1647 @@
+{
+    "name": "Avocado",
+    "nutritionalValues": {
+        "calories": 162.454,
+        "protein": 1.7,
+        "fat": 15.3,
+        "carbohydrates": 5,
+        "cholesterol": 0,
+        "dietaryFiber": 1.9
+    }
+},
+{
+    "name": "Avocado with Peel and Seed",
+    "nutritionalValues": {
+        "calories": 121.816,
+        "protein": 1.5,
+        "fat": 11.3,
+        "carbohydrates": 3.9,
+        "cholesterol": 0,
+        "dietaryFiber": 1.9
+    }
+},
+{
+    "name": "Peeled Watermelon",
+    "nutritionalValues": {
+        "calories": 33.174,
+        "protein": 0.5,
+        "fat": 0.4,
+        "carbohydrates": 6.8,
+        "cholesterol": 0,
+        "dietaryFiber": 0.5
+    }
+},
+{
+    "name": "Watermelon with Peel",
+    "nutritionalValues": {
+        "calories": 14.76,
+        "protein": 0.2,
+        "fat": 0.2,
+        "carbohydrates": 3,
+        "cholesterol": 0,
+        "dietaryFiber": 0.5
+    }
+},
+{
+    "name": "Nuts (snack)",
+    "nutritionalValues": {
+        "calories": 493.74,
+        "protein": 5,
+        "fat": 26,
+        "carbohydrates": 60,
+        "cholesterol": 6,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Hazelnuts (Filberts)",
+    "nutritionalValues": {
+        "calories": 662.48,
+        "protein": 12,
+        "fat": 63,
+        "carbohydrates": 14,
+        "cholesterol": 0,
+        "dietaryFiber": 3.7
+    }
+},
+{
+    "name": "Roasted Hazelnuts (Filberts)",
+    "nutritionalValues": {
+        "calories": 691.652,
+        "protein": 12,
+        "fat": 66.3,
+        "carbohydrates": 14,
+        "cholesterol": 0,
+        "dietaryFiber": 3.7
+    }
+},
+{
+    "name": "Brazil Nuts",
+    "nutritionalValues": {
+        "calories": 693.708,
+        "protein": 14.3,
+        "fat": 66.9,
+        "carbohydrates": 10.9,
+        "cholesterol": 0,
+        "dietaryFiber": 3.1
+    }
+},
+{
+    "name": "Walnuts",
+    "nutritionalValues": {
+        "calories": 690.31,
+        "protein": 15,
+        "fat": 65,
+        "carbohydrates": 13.5,
+        "cholesterol": 0,
+        "dietaryFiber": 3
+    }
+},
+{
+    "name": "Macadamia Nuts",
+    "nutritionalValues": {
+        "calories": 729.166,
+        "protein": 7.8,
+        "fat": 71.6,
+        "carbohydrates": 15.9,
+        "cholesterol": 0,
+        "dietaryFiber": 2
+    }
+},
+{
+    "name": "Pecans",
+    "nutritionalValues": {
+        "calories": 726.206,
+        "protein": 9.6,
+        "fat": 72,
+        "carbohydrates": 12.5,
+        "cholesterol": 0,
+        "dietaryFiber": 2.7
+    }
+},
+{
+    "name": "Roasted Pecans",
+    "nutritionalValues": {
+        "calories": 687.586,
+        "protein": 8,
+        "fat": 64.6,
+        "carbohydrates": 20.7,
+        "cholesterol": 0,
+        "dietaryFiber": 2.7
+    }
+},
+{
+    "name": "Coconut",
+    "nutritionalValues": {
+        "calories": 358.12,
+        "protein": 4,
+        "fat": 35,
+        "carbohydrates": 8,
+        "cholesterol": 0,
+        "dietaryFiber": 6.4
+    }
+},
+{
+    "name": "Dried Coconut Flakes",
+    "nutritionalValues": {
+        "calories": 676.1,
+        "protein": 7,
+        "fat": 65,
+        "carbohydrates": 18,
+        "cholesterol": 0,
+        "dietaryFiber": 6.4
+    }
+},
+{
+    "name": "Cashews",
+    "nutritionalValues": {
+        "calories": 592.778,
+        "protein": 17.2,
+        "fat": 45.7,
+        "carbohydrates": 29.3,
+        "cholesterol": 0,
+        "dietaryFiber": 0.7
+    }
+},
+{
+    "name": "Peeled Pear",
+    "nutritionalValues": {
+        "calories": 69.308,
+        "protein": 0.4,
+        "fat": 0.4,
+        "carbohydrates": 15.8,
+        "cholesterol": 0,
+        "dietaryFiber": 2
+    }
+},
+{
+    "name": "Cooked/Preserved Pear",
+    "nutritionalValues": {
+        "calories": 30.044,
+        "protein": 0.2,
+        "fat": 0,
+        "carbohydrates": 7.2,
+        "cholesterol": 0,
+        "dietaryFiber": 2
+    }
+},
+{
+    "name": "Whole Pear",
+    "nutritionalValues": {
+        "calories": 56.316,
+        "protein": 0.4,
+        "fat": 0.4,
+        "carbohydrates": 12.6,
+        "cholesterol": 0,
+        "dietaryFiber": 2
+    }
+},
+{
+    "name": "Duck (Skinless)",
+    "nutritionalValues": {
+        "calories": 154.926,
+        "protein": 22.7,
+        "fat": 7.1,
+        "carbohydrates": 0,
+        "cholesterol": 84,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Duck (With Skin)",
+    "nutritionalValues": {
+        "calories": 361.172,
+        "protein": 15.8,
+        "fat": 33.6,
+        "carbohydrates": 0,
+        "cholesterol": 80,
+        "dietaryFiber": 0
+    }
+}.
+{
+    "name": "Boiled Goose (Skinless)",
+    "nutritionalValues": {
+        "Calories": 228.718,
+        "Protein": 28.9,
+        "Fat": 12.6,
+        "Carbohydrates": 0,
+        "Cholesterol": 96,
+        "Dietary fiber": 0
+    }
+},
+{
+    "name": "Boiled Goose (With Skin)",
+    "nutritionalValues": {
+        "Calories": 295.502,
+        "Protein": 25.1,
+        "Fat": 21.9,
+        "Carbohydrates": 0,
+        "Cholesterol": 91,
+        "Dietary fiber": 0
+    }
+},
+{
+    "name": "Goose (Liver)",
+    "nutritionalValues": {
+        "Calories": 128.884,
+        "Protein": 16.3,
+        "Fat": 4.2,
+        "Carbohydrates": 6.3,
+        "Cholesterol": 515,
+        "Dietary fiber": 0
+    }
+},
+{
+    "name": "Goose (Liver Pate)",
+    "nutritionalValues": {
+        "Calories": 452.152,
+        "Protein": 11.4,
+        "Fat": 43.8,
+        "Carbohydrates": 4.6,
+        "Cholesterol": 150,
+        "Dietary fiber": 0
+    }
+},
+{
+    "name": "Preserved Cranberries in Syrup",
+    "nutritionalValues": {
+        "Calories": 59.492,
+        "Protein": 1.3,
+        "Fat": 0.3,
+        "Carbohydrates": 12.7,
+        "Cholesterol": 0,
+        "Dietary fiber": 0.5
+    }
+},
+{
+    "name": "Oat Bran (Cereal)",
+    "nutritionalValues": {
+        "Calories": 267.756,
+        "Protein": 12.2,
+        "Fat": 3.1,
+        "Carbohydrates": 47,
+        "Cholesterol": 0,
+        "Dietary fiber": 2.8
+    }
+},
+{
+    "name": "Barley (Raw)",
+    "nutritionalValues": {
+        "Calories": 372.616,
+        "Protein": 14.7,
+        "Fat": 1,
+        "Carbohydrates": 74.9,
+        "Cholesterol": 0,
+        "Dietary fiber": 6
+    }
+},
+{
+    "name": "Barley (Boiled)",
+    "nutritionalValues": {
+        "Calories": 104.964,
+        "Protein": 3.9,
+        "Fat": 0.3,
+        "Carbohydrates": 21.3,
+        "Cholesterol": 0,
+        "Dietary fiber": 1.9
+    }
+},
+{
+    "name": "Uncooked White Rice",
+    "nutritionalValues": {
+        "Calories": 360.22,
+        "Protein": 6.7,
+        "Fat": 0.7,
+        "Carbohydrates": 80.5,
+        "Cholesterol": 0,
+        "Dietary fiber": 2.1
+    }
+},
+{
+    "name": "Extra Long Grain White Rice (Boiled)",
+    "nutritionalValues": {
+        "Calories": 111.46,
+        "Protein": 2.3,
+        "Fat": 0.3,
+        "Carbohydrates": 24.5,
+        "Cholesterol": 0,
+        "Dietary fiber": 0.7
+    }
+},
+{
+    "name": "Long Grain White Rice (Boiled)",
+    "nutritionalValues": {
+        "Calories": 117.144,
+        "Protein": 2.7,
+        "Fat": 0.3,
+        "Carbohydrates": 25.5,
+        "Cholesterol": 0,
+        "Dietary fiber": 0.7
+    }
+},
+{
+    "name": "Uncooked Brown Rice",
+    "nutritionalValues": {
+        "Calories": 370.33,
+        "Protein": 7.5,
+        "Fat": 2.9,
+        "Carbohydrates": 77.4,
+        "Cholesterol": 0,
+        "DietaryFiber": 2.7
+    }
+},
+{
+    "name": "Cooked Brown Rice",
+    "nutritionalValues": {
+        "Calories": 118.984,
+        "Protein": 2.5,
+        "Fat": 0.6,
+        "Carbohydrates": 25.5,
+        "Cholesterol": 0,
+        "DietaryFiber": 1.2
+    }
+},
+{
+    "name": "Uncooked Pasta (all types)",
+    "nutritionalValues": {
+        "Calories": 365.858,
+        "Protein": 12.5,
+        "Fat": 1.2,
+        "Carbohydrates": 75,
+        "Cholesterol": 0,
+        "DietaryFiber": 1.4
+    }
+},
+{
+    "name": "Cooked Pasta (all types)",
+    "nutritionalValues": {
+        "Calories": 155.786,
+        "Protein": 5,
+        "Fat": 0.4,
+        "Carbohydrates": 32.5,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.1
+    }
+},
+{
+    "name": "Cooked Egg Noodles",
+    "nutritionalValues": {
+        "Calories": 167.54,
+        "Protein": 5.5,
+        "Fat": 1.5,
+        "Carbohydrates": 32.5,
+        "Cholesterol": 0,
+        "DietaryFiber": 1.4
+    }
+},
+{
+    "name": "Uncooked Whole Wheat Pasta",
+    "nutritionalValues": {
+        "Calories": 363.972,
+        "Protein": 14.6,
+        "Fat": 1.4,
+        "Carbohydrates": 72,
+        "Cholesterol": 0,
+        "DietaryFiber": 7.8
+    }
+},
+{
+    "name": "Cooked Whole Wheat Pasta",
+    "nutritionalValues": {
+        "Calories": 129.468,
+        "Protein": 5.3,
+        "Fat": 0.5,
+        "Carbohydrates": 25.5,
+        "Cholesterol": 0,
+        "DietaryFiber": 1.9
+    }
+},
+{
+    "name": "Annona (Sugar Apple)",
+    "nutritionalValues": {
+        "Calories": 100.976,
+        "Protein": 2,
+        "Fat": 0.4,
+        "Carbohydrates": 22,
+        "Cholesterol": 0,
+        "DietaryFiber": 1.7
+    }
+},
+{
+    "name": "Pineapple",
+    "nutritionalValues": {
+        "Calories": 48.602,
+        "Protein": 0.4,
+        "Fat": 0.4,
+        "Carbohydrates": 10.7,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.5
+    }
+}.
+{
+    "name": "Pineapple (canned)",
+    "nutritionalValues": {
+        "Calories": 55.288,
+        "Protein": 0.4,
+        "Fat": 0.1,
+        "Carbohydrates": 13,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.5
+    }
+},
+{
+    "name": "Anchovy in oil (canned)",
+    "nutritionalValues": {
+        "Calories": 203.082,
+        "Protein": 28.9,
+        "Fat": 9.7,
+        "Carbohydrates": 0,
+        "Cholesterol": 0,
+        "DietaryFiber": 0
+    }
+},
+{
+    "name": "Fresh Asparagus Spears",
+    "nutritionalValues": {
+        "Calories": 26.128,
+        "Protein": 2.3,
+        "Fat": 0.2,
+        "Carbohydrates": 3.7,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.7
+    }
+},
+{
+    "name": "Dried Beans",
+    "nutritionalValues": {
+        "Calories": 353.75,
+        "Protein": 24,
+        "Fat": 1.3,
+        "Carbohydrates": 60.3,
+        "Cholesterol": 0,
+        "DietaryFiber": 4
+    }
+},
+{
+    "name": "Cooked Dried Beans",
+    "nutritionalValues": {
+        "Calories": 124.452,
+        "Protein": 8,
+        "Fat": 0.3,
+        "Carbohydrates": 22,
+        "Cholesterol": 0,
+        "DietaryFiber": 2.5
+    }
+},
+{
+    "name": "Green Fresh Beans",
+    "nutritionalValues": {
+        "Calories": 75.398,
+        "Protein": 5.4,
+        "Fat": 0.4,
+        "Carbohydrates": 12.3,
+        "Cholesterol": 0,
+        "DietaryFiber": 2.5
+    }
+},
+{
+    "name": "Cooked Green Beans",
+    "nutritionalValues": {
+        "Calories": 63.958,
+        "Protein": 5,
+        "Fat": 0.3,
+        "Carbohydrates": 10.1,
+        "Cholesterol": 0,
+        "DietaryFiber": 5
+    }
+},
+{
+    "name": "Apricot",
+    "nutritionalValues": {
+        "Calories": 136.704,
+        "Protein": 0.8,
+        "Fat": 0.4,
+        "Carbohydrates": 32,
+        "Cholesterol": 0,
+        "DietaryFiber": 1.8
+    }
+},
+{
+    "name": "Pitted Peach",
+    "nutritionalValues": {
+        "Calories": 51.634,
+        "Protein": 0.5,
+        "Fat": 0.1,
+        "Carbohydrates": 12,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.5
+    }
+},
+{
+    "name": "Peach with Seed",
+    "nutritionalValues": {
+        "Calories": 35.394,
+        "Protein": 0.5,
+        "Fat": 0.1,
+        "Carbohydrates": 8,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.5
+    }
+}.
+{
+    "name": "Apricot (Preserves)",
+    "nutritionalValues": {
+        "Calories": 60.088,
+        "Protein": 0.5,
+        "Fat": 0,
+        "Carbohydrates": 14.3,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.5
+    }
+},
+{
+    "name": "Arctic Ice",
+    "nutritionalValues": {
+        "Calories": 78.358,
+        "Protein": 0,
+        "Fat": 0,
+        "Carbohydrates": 19.3,
+        "Cholesterol": 0,
+        "DietaryFiber": 0
+    }
+},
+{
+    "name": "Low-Calorie Arctic Ice",
+    "nutritionalValues": {
+        "Calories": 1.624,
+        "Protein": 0,
+        "Fat": 0,
+        "Carbohydrates": 0.4,
+        "Cholesterol": 0,
+        "DietaryFiber": 0
+    }
+},
+{
+    "name": "Boiled Artichoke",
+    "nutritionalValues": {
+        "Calories": 55.288,
+        "Protein": 3.5,
+        "Fat": 0.1,
+        "Carbohydrates": 9.9,
+        "Cholesterol": 0,
+        "DietaryFiber": 4.5
+    }
+},
+{
+    "name": "Artichoke (Boiled Heads)",
+    "nutritionalValues": {
+        "Calories": 52.924,
+        "Protein": 3.3,
+        "Fat": 0.2,
+        "Carbohydrates": 9.3,
+        "Cholesterol": 0,
+        "DietaryFiber": 1.4
+    }
+},
+{
+    "name": "Jerusalem Artichoke",
+    "nutritionalValues": {
+        "Calories": 79.648,
+        "Protein": 2,
+        "Fat": 0.1,
+        "Carbohydrates": 17.4,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.5
+    }
+},
+{
+    "name": "Boiled Jerusalem Artichoke",
+    "nutritionalValues": {
+        "Calories": 78.024,
+        "Protein": 2,
+        "Fat": 0.1,
+        "Carbohydrates": 17,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.5
+    }
+},
+{
+    "name": "Peeled Ashkelon",
+    "nutritionalValues": {
+        "Calories": 39.454,
+        "Protein": 0.5,
+        "Fat": 0.1,
+        "Carbohydrates": 9,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.2
+    }
+},
+{
+    "name": "Ashkelon with Peel",
+    "nutritionalValues": {
+        "Calories": 17.936,
+        "Protein": 0.3,
+        "Fat": 0.1,
+        "Carbohydrates": 3.9,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.2
+    }
+},
+{
+    "name": "Ashlil",
+    "nutritionalValues": {
+        "Calories": 68.2,
+        "Protein": 3.5,
+        "Fat": 4.5,
+        "Carbohydrates": 3.5,
+        "Cholesterol": 19,
+        "DietaryFiber": 0
+    }
+},
+{
+    "name": "Peeled peanuts",
+    "nutritionalValues": {
+        "calories": 586.366,
+        "protein": 26,
+        "fat": 49.2,
+        "carbohydrates": 11.3,
+        "cholesterol": 0,
+        "dietaryFiber": 5
+    }
+},
+{
+    "name": "Roasted peanuts",
+    "nutritionalValues": {
+        "calories": 556.186,
+        "protein": 23.7,
+        "fat": 44.5,
+        "carbohydrates": 16.4,
+        "cholesterol": 0,
+        "dietaryFiber": 3
+    }
+},
+{
+    "name": "Bulgur",
+    "nutritionalValues": {
+        "calories": 360.39,
+        "protein": 12.5,
+        "fat": 1.5,
+        "carbohydrates": 73,
+        "cholesterol": 0,
+        "dietaryFiber": 2
+    }
+},
+{
+    "name": "Cooked Bulgur",
+    "nutritionalValues": {
+        "calories": 88.246,
+        "protein": 3.1,
+        "fat": 0.2,
+        "carbohydrates": 18.2,
+        "cholesterol": 0,
+        "dietaryFiber": 2
+    }
+},
+{
+    "name": "Roasted/Fried Chickpeas",
+    "nutritionalValues": {
+        "calories": 144.004,
+        "protein": 24.8,
+        "fat": 4.9,
+        "carbohydrates": 0,
+        "cholesterol": 63,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Raw Chickpeas",
+    "nutritionalValues": {
+        "calories": 62.484,
+        "protein": 10.6,
+        "fat": 2.2,
+        "carbohydrates": 0,
+        "cholesterol": 18,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Meat Bourekas",
+    "nutritionalValues": {
+        "calories": 356.624,
+        "protein": 17,
+        "fat": 23.9,
+        "carbohydrates": 18.8,
+        "cholesterol": 63.5,
+        "dietaryFiber": 0.1
+    }
+},
+{
+    "name": "Cheese Bourekas",
+    "nutritionalValues": {
+        "calories": 348.238,
+        "protein": 18.8,
+        "fat": 16.2,
+        "carbohydrates": 31.7,
+        "cholesterol": 9,
+        "dietaryFiber": 0.1
+    }
+},
+{
+    "name": "Mushroom Bourekas",
+    "nutritionalValues": {
+        "calories": 297.402,
+        "protein": 4.9,
+        "fat": 18.9,
+        "carbohydrates": 27.2,
+        "cholesterol": 0,
+        "dietaryFiber": 0.1
+    }
+},
+{
+    "name": "Pizza Bourekas",
+    "nutritionalValues": {
+        "calories": 328.12,
+        "protein": 10.8,
+        "fat": 20.4,
+        "carbohydrates": 25.6,
+        "cholesterol": 0,
+        "dietaryFiber": 0.1
+    }
+},
+{
+    "name": "Borekas with potato",
+    "nutritionalValues": {
+        "calories": 275.44,
+        "protein": 5.2,
+        "fat": 14.9,
+        "carbohydrates": 30.2,
+        "cholesterol": 0,
+        "dietaryFiber": 0.1
+    }
+},
+{
+    "name": "Thyme borekas",
+    "nutritionalValues": {
+        "calories": 295.824,
+        "protein": 5.8,
+        "fat": 18.4,
+        "carbohydrates": 27,
+        "cholesterol": 1.7,
+        "dietaryFiber": 0.2
+    }
+},
+{
+    "name": "Baked potato with skin",
+    "nutritionalValues": {
+        "calories": 103.196,
+        "protein": 1.7,
+        "fat": 0.1,
+        "carbohydrates": 23.5,
+        "cholesterol": 0,
+        "dietaryFiber": 0.7
+    }
+},
+{
+    "name": "Fresh potato without skin",
+    "nutritionalValues": {
+        "calories": 106.326,
+        "protein": 1.7,
+        "fat": 0.5,
+        "carbohydrates": 23.4,
+        "cholesterol": 0,
+        "dietaryFiber": 0.3
+    }
+},
+{
+    "name": "Fresh potato with skin",
+    "nutritionalValues": {
+        "calories": 75.254,
+        "protein": 1.2,
+        "fat": 0.2,
+        "carbohydrates": 16.9,
+        "cholesterol": 0,
+        "dietaryFiber": 0.7
+    }
+},
+{
+    "name": "Boiled potato",
+    "nutritionalValues": {
+        "calories": 112.272,
+        "protein": 1.5,
+        "fat": 0.3,
+        "carbohydrates": 25.5,
+        "cholesterol": 0,
+        "dietaryFiber": 0.3
+    }
+},
+{
+    "name": "Bagel",
+    "nutritionalValues": {
+        "calories": 379.648,
+        "protein": 9.8,
+        "fat": 4,
+        "carbohydrates": 75,
+        "cholesterol": 0,
+        "dietaryFiber": 3.2
+    }
+},
+{
+    "name": "Biscuits",
+    "nutritionalValues": {
+        "calories": 492.438,
+        "protein": 10.3,
+        "fat": 22.5,
+        "carbohydrates": 62,
+        "cholesterol": 0,
+        "dietaryFiber": 0.3
+    }
+},
+{
+    "name": "Biscuits",
+    "nutritionalValues": {
+        "calories": 414.15,
+        "protein": 9.5,
+        "fat": 8.5,
+        "carbohydrates": 74,
+        "cholesterol": 0,
+        "dietaryFiber": 0.5
+    }
+},
+{
+    "name": "Egg (protein)",
+    "nutritionalValues": {
+        "calories": 47.908,
+        "protein": 10.8,
+        "fat": 0,
+        "carbohydrates": 1,
+        "cholesterol": 0,
+        "dietaryFiber": 0
+    }
+}
+{
+    "name": "Egg (Chicken)",
+    "nutritionalValues": {
+        "Calories": 355.148,
+        "Protein": 16,
+        "Fat": 32,
+        "Carbohydrates": 1.8,
+        "Cholesterol": 1281,
+        "DietaryFiber": 0
+    }
+},
+{
+    "name": "Egg, Shell Removed",
+    "nutritionalValues": {
+        "Calories": 157.688,
+        "Protein": 12.9,
+        "Fat": 11.5,
+        "Carbohydrates": 0.9,
+        "Cholesterol": 425,
+        "DietaryFiber": 0
+    }
+},
+{
+    "name": "Egg, with Shell",
+    "nutritionalValues": {
+        "Calories": 122.236,
+        "Protein": 10.6,
+        "Fat": 8.5,
+        "Carbohydrates": 1,
+        "Cholesterol": 361,
+        "DietaryFiber": 0
+    }
+},
+{
+    "name": "Hard-boiled Egg",
+    "nutritionalValues": {
+        "Calories": 148.92,
+        "Protein": 12.5,
+        "Fat": 10.6,
+        "Carbohydrates": 1.1,
+        "Cholesterol": 424,
+        "DietaryFiber": 0
+    }
+},
+{
+    "name": "Fish Roe (Caviar)",
+    "nutritionalValues": {
+        "Calories": 255.212,
+        "Protein": 26.9,
+        "Fat": 15,
+        "Carbohydrates": 3.3,
+        "Cholesterol": 0,
+        "DietaryFiber": 0
+    }
+},
+{
+    "name": "Light Beer",
+    "nutritionalValues": {
+        "Calories": 36.134,
+        "Protein": 0.3,
+        "Fat": 0,
+        "Carbohydrates": 8.6,
+        "Cholesterol": 0,
+        "DietaryFiber": 0
+    }
+},
+{
+    "name": "Dark Beer",
+    "nutritionalValues": {
+        "Calories": 33.698,
+        "Protein": 0.3,
+        "Fat": 0,
+        "Carbohydrates": 8,
+        "Cholesterol": 0,
+        "DietaryFiber": 0
+    }
+},
+{
+    "name": "Bubble Gum",
+    "nutritionalValues": {
+        "Calories": 565.9,
+        "Protein": 14,
+        "Fat": 36,
+        "Carbohydrates": 47,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.3
+    }
+},
+{
+    "name": "Boiled/Preserved Corn",
+    "nutritionalValues": {
+        "Calories": 20.588,
+        "Protein": 1.7,
+        "Fat": 0.4,
+        "Carbohydrates": 2.5,
+        "Cholesterol": 0,
+        "DietaryFiber": 0.8
+    }
+},
+{
+    "name": "Watermelon",
+    "nutritionalValues": {
+        "Calories": 43.252,
+        "Protein": 2.4,
+        "Fat": 0.3,
+        "Carbohydrates": 7.6,
+        "Cholesterol": 0,
+        "Dietary Fiber": 1
+    }
+},
+{
+    "name": "Cooked Watermelon",
+    "nutritionalValues": {
+        "Calories": 30.522,
+        "Protein": 1.8,
+        "Fat": 0.1,
+        "Carbohydrates": 5.5,
+        "Cholesterol": 0,
+        "Dietary Fiber": 1
+    }
+},
+{
+    "name": "Banana with Peel",
+    "nutritionalValues": {
+        "Calories": 60.304,
+        "Protein": 0.7,
+        "Fat": 0.3,
+        "Carbohydrates": 13.5,
+        "Cholesterol": 0,
+        "Dietary Fiber": 2
+    }
+},
+{
+    "name": "Banana without Peel",
+    "nutritionalValues": {
+        "Calories": 95.77,
+        "Protein": 1,
+        "Fat": 0.5,
+        "Carbohydrates": 21.5,
+        "Cholesterol": 0,
+        "Dietary Fiber": 2
+    }
+},
+{
+    "name": "Dried Onion",
+    "nutritionalValues": {
+        "Calories": 43.514,
+        "Protein": 1.5,
+        "Fat": 0.1,
+        "Carbohydrates": 9,
+        "Cholesterol": 0,
+        "Dietary Fiber": 0.6
+    }
+},
+{
+    "name": "Green Onion",
+    "nutritionalValues": {
+        "Calories": 35.394,
+        "Protein": 1.5,
+        "Fat": 0.1,
+        "Carbohydrates": 7,
+        "Cholesterol": 0,
+        "Dietary Fiber": 1.3
+    }
+},
+{
+    "name": "Cooked Onion",
+    "nutritionalValues": {
+        "Calories": 46.022,
+        "Protein": 1.4,
+        "Fat": 0.2,
+        "Carbohydrates": 9.5,
+        "Cholesterol": 0,
+        "Dietary Fiber": 0.6
+    }
+},
+{
+    "name": "Duck (Before Cooking)",
+    "nutritionalValues": {
+        "Calories": 126.048,
+        "Protein": 18.2,
+        "Fat": 5.9,
+        "Carbohydrates": 0,
+        "Cholesterol": 77,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Duck (Cooked)",
+    "nutritionalValues": {
+        "Calories": 194.012,
+        "Protein": 23.4,
+        "Fat": 11.2,
+        "Carbohydrates": 0,
+        "Cholesterol": 89,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Broccoli",
+    "nutritionalValues": {
+        "Calories": 31.478,
+        "Protein": 3,
+        "Fat": 0.3,
+        "Carbohydrates": 4.1,
+        "Cholesterol": 0,
+        "Dietary Fiber": 1.4
+    }
+}.
+{
+    "name": "Boiled Broccoli",
+    "nutritionalValues": {
+        "Calories": 31.072,
+        "Protein": 3,
+        "Fat": 0.3,
+        "Carbohydrates": 4,
+        "Cholesterol": 0,
+        "Dietary Fiber": 0.9
+    }
+},
+{
+    "name": "Brandy*",
+    "nutritionalValues": {
+        "Calories": 235,
+        "Protein": 0,
+        "Fat": 0,
+        "Carbohydrates": 0,
+        "Cholesterol": 0,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Bran Flakes",
+    "nutritionalValues": {
+        "Calories": 282.484,
+        "Protein": 12,
+        "Fat": 1,
+        "Carbohydrates": 55.4,
+        "Cholesterol": 0,
+        "Dietary Fiber": 1.1
+    }
+},
+{
+    "name": "Raw Ground Beef",
+    "nutritionalValues": {
+        "Calories": 226.202,
+        "Protein": 18.7,
+        "Fat": 17,
+        "Carbohydrates": 0,
+        "Cholesterol": 69,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Boiled Ground Beef",
+    "nutritionalValues": {
+        "Calories": 241.388,
+        "Protein": 24.4,
+        "Fat": 16.1,
+        "Carbohydrates": 0,
+        "Cholesterol": 82,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Boiled Beef",
+    "nutritionalValues": {
+        "Calories": 339.296,
+        "Protein": 25,
+        "Fat": 26.9,
+        "Carbohydrates": 0,
+        "Cholesterol": 91,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Lean Boiled Beef",
+    "nutritionalValues": {
+        "Calories": 224.41,
+        "Protein": 33.5,
+        "Fat": 10,
+        "Carbohydrates": 0,
+        "Cholesterol": 91,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Raw Beef",
+    "nutritionalValues": {
+        "Calories": 279.674,
+        "Protein": 17.5,
+        "Fat": 23.6,
+        "Carbohydrates": 0,
+        "Cholesterol": 70,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Lean Raw Beef",
+    "nutritionalValues": {
+        "Calories": 140.546,
+        "Protein": 20.9,
+        "Fat": 6.3,
+        "Carbohydrates": 0,
+        "Cholesterol": 60,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Preserved Beef",
+    "nutritionalValues": {
+        "Calories": 232.79,
+        "Protein": 22.5,
+        "Fat": 16,
+        "Carbohydrates": 0,
+        "Cholesterol": 91,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Grilled beef",
+    "nutritionalValues": {
+        "calories": 322.5,
+        "protein": 25,
+        "fat": 25,
+        "carbohydrates": 0,
+        "cholesterol": 91,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Raw turkey meat",
+    "nutritionalValues": {
+        "calories": 104.682,
+        "protein": 22.3,
+        "fat": 1.6,
+        "carbohydrates": 0,
+        "cholesterol": 73,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Grilled turkey breast",
+    "nutritionalValues": {
+        "calories": 128.394,
+        "protein": 30.1,
+        "fat": 0.7,
+        "carbohydrates": 0,
+        "cholesterol": 83,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Turkey pastrami",
+    "nutritionalValues": {
+        "calories": 98.52,
+        "protein": 18,
+        "fat": 1.5,
+        "carbohydrates": 3,
+        "cholesterol": 30,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Low-fat turkey pastrami",
+    "nutritionalValues": {
+        "calories": 92.07,
+        "protein": 18,
+        "fat": 1,
+        "carbohydrates": 2.5,
+        "cholesterol": 20,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Grilled turkey meat",
+    "nutritionalValues": {
+        "calories": 144.784,
+        "protein": 30,
+        "fat": 2.6,
+        "carbohydrates": 0,
+        "cholesterol": 98,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Raw lamb shank",
+    "nutritionalValues": {
+        "calories": 193.566,
+        "protein": 18.5,
+        "fat": 13.4,
+        "carbohydrates": 0,
+        "cholesterol": 67,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Cooked lamb shank",
+    "nutritionalValues": {
+        "calories": 216.8,
+        "protein": 26.4,
+        "fat": 12.4,
+        "carbohydrates": 0,
+        "cholesterol": 90,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Ground lamb meat (raw)",
+    "nutritionalValues": {
+        "calories": 273.846,
+        "protein": 16.5,
+        "fat": 23.4,
+        "carbohydrates": 0,
+        "cholesterol": 73,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Cooked ground lamb meat",
+    "nutritionalValues": {
+        "calories": 273.546,
+        "protein": 24.7,
+        "fat": 19.6,
+        "carbohydrates": 0,
+        "cholesterol": 97,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Boiled Lamb Meat",
+    "nutritionalValues": {
+        "Calories": 251.78,
+        "Protein": 25,
+        "Fat": 17,
+        "Carbohydrates": 0,
+        "Cholesterol": 65,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Roasted Lamb Ribs",
+    "nutritionalValues": {
+        "Calories": 316.31,
+        "Protein": 11.5,
+        "Fat": 30.5,
+        "Carbohydrates": 0,
+        "Cholesterol": 65,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Boiled Beef Tongue",
+    "nutritionalValues": {
+        "Calories": 274.148,
+        "Protein": 21.5,
+        "Fat": 21,
+        "Carbohydrates": 0.3,
+        "Cholesterol": 0,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Boiled Veal Meat",
+    "nutritionalValues": {
+        "Calories": 300.04,
+        "Protein": 26,
+        "Fat": 22,
+        "Carbohydrates": 0,
+        "Cholesterol": 95,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Uncooked Chicken Meat",
+    "nutritionalValues": {
+        "Calories": 114.288,
+        "Protein": 21.4,
+        "Fat": 3.1,
+        "Carbohydrates": 0,
+        "Cholesterol": 70,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Uncooked Chicken Breast",
+    "nutritionalValues": {
+        "Calories": 104.394,
+        "Protein": 23.1,
+        "Fat": 1.2,
+        "Carbohydrates": 0,
+        "Cholesterol": 58,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Boiled Chicken Breast",
+    "nutritionalValues": {
+        "Calories": 144.26,
+        "Protein": 29,
+        "Fat": 3,
+        "Carbohydrates": 0,
+        "Cholesterol": 75,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Boiled Chicken Meat",
+    "nutritionalValues": {
+        "Calories": 168.92,
+        "Protein": 26.8,
+        "Fat": 6.8,
+        "Carbohydrates": 0,
+        "Cholesterol": 75,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Boiled Chicken Thigh (skinless)",
+    "nutritionalValues": {
+        "Calories": 162.038,
+        "Protein": 27.5,
+        "Fat": 5.7,
+        "Carbohydrates": 0,
+        "Cholesterol": 88,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Uncooked Chicken Wings",
+    "nutritionalValues": {
+        "Calories": 120.358,
+        "Protein": 20,
+        "Fat": 4.2,
+        "Carbohydrates": 0.5,
+        "Cholesterol": 130,
+        "Dietary Fiber": 0
+    }
+},
+{
+    "name": "Cooked chicken (drumsticks)",
+    "nutritionalValues": {
+        "calories": 149.446,
+        "protein": 27,
+        "fat": 4,
+        "carbohydrates": 1.1,
+        "cholesterol": 194,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Hummus",
+    "nutritionalValues": {
+        "calories": 269.668,
+        "protein": 8.8,
+        "fat": 3.5,
+        "carbohydrates": 50,
+        "cholesterol": 0,
+        "dietaryFiber": 0.1
+    }
+},
+{
+    "name": "Bulgarian cheese 5%",
+    "nutritionalValues": {
+        "calories": 115.25,
+        "protein": 17,
+        "fat": 5,
+        "carbohydrates": 0.5,
+        "cholesterol": 16,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Bulgarian cheese 16%",
+    "nutritionalValues": {
+        "calories": 208.43,
+        "protein": 16,
+        "fat": 16,
+        "carbohydrates": 0.5,
+        "cholesterol": 48,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Bulgarian cheese 24%",
+    "nutritionalValues": {
+        "calories": 277.12,
+        "protein": 13,
+        "fat": 24,
+        "carbohydrates": 3,
+        "cholesterol": 72,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Cottage cheese 0.5%",
+    "nutritionalValues": {
+        "calories": 60.042,
+        "protein": 10.9,
+        "fat": 0.5,
+        "carbohydrates": 2.8,
+        "cholesterol": 2,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Cottage cheese 5%",
+    "nutritionalValues": {
+        "calories": 100.228,
+        "protein": 9.5,
+        "fat": 5,
+        "carbohydrates": 4.3,
+        "cholesterol": 15,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Cottage cheese 9%",
+    "nutritionalValues": {
+        "calories": 134.37,
+        "protein": 10.5,
+        "fat": 9,
+        "carbohydrates": 3,
+        "cholesterol": 30,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Hard cheese",
+    "nutritionalValues": {
+        "calories": 278.652,
+        "protein": 13,
+        "fat": 25,
+        "carbohydrates": 1.2,
+        "cholesterol": 75,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Tzfat cheese 0.5%",
+    "nutritionalValues": {
+        "calories": 83.59,
+        "protein": 19,
+        "fat": 0.5,
+        "carbohydrates": 0.5,
+        "cholesterol": 2,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Tzfat Cheese 5%",
+    "nutritionalValues": {
+        "calories": 128.648,
+        "protein": 18.2,
+        "fat": 5,
+        "carbohydrates": 2.6,
+        "cholesterol": 15,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Tzfat Cheese 9%",
+    "nutritionalValues": {
+        "calories": 193.24,
+        "protein": 25,
+        "fat": 9,
+        "carbohydrates": 3,
+        "cholesterol": 38,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Tzfat Cheese 16%",
+    "nutritionalValues": {
+        "calories": 228.324,
+        "protein": 18.5,
+        "fat": 16,
+        "carbohydrates": 2.9,
+        "cholesterol": 57,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Yellow Cheese 9%",
+    "nutritionalValues": {
+        "calories": 202.172,
+        "protein": 30,
+        "fat": 9,
+        "carbohydrates": 0.2,
+        "cholesterol": 27,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Yellow Cheese 17%",
+    "nutritionalValues": {
+        "calories": 252.592,
+        "protein": 25,
+        "fat": 17,
+        "carbohydrates": 0.2,
+        "cholesterol": 72,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Yellow Cheese 21%",
+    "nutritionalValues": {
+        "calories": 283.892,
+        "protein": 24,
+        "fat": 21,
+        "carbohydrates": 0.2,
+        "cholesterol": 89,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Yellow Cheese 22%",
+    "nutritionalValues": {
+        "calories": 296.792,
+        "protein": 25,
+        "fat": 22,
+        "carbohydrates": 0.2,
+        "cholesterol": 66,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Yellow Cheese 25%",
+    "nutritionalValues": {
+        "calories": 326.56,
+        "protein": 24,
+        "fat": 25,
+        "carbohydrates": 2,
+        "cholesterol": 106,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Yellow Cheese 28%",
+    "nutritionalValues": {
+        "calories": 345.772,
+        "protein": 24,
+        "fat": 28,
+        "carbohydrates": 0.2,
+        "cholesterol": 84,
+        "dietaryFiber": 0
+    }
+},
+{
+    "name": "Yellow Cheese 31%",
+    "nutritionalValues": {
+        "calories": 370.262,
+        "protein": 23.5,
+        "fat": 31,
+        "carbohydrates": 0.2,
+        "cholesterol": 93,
+        "dietaryFiber": 0
+    }
+}.
+
+
+
+
+
+
+
+
