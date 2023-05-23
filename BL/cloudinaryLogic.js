@@ -3,7 +3,7 @@ const path = require('path')
 
 const PostRecipe = require('../DL/models/recipeModel.js')
 
-// const userModel = require("../../DL/models/userModel")
+const userModel = require("../DL/models/userModel")
 
 require("dotenv").config();
 
@@ -119,4 +119,43 @@ async function deleteFromCloudinary(cloudinaryToDelete) {
 //     'https://res.cloudinary.com/dqnf2qxk8/image/upload/v1682357010/sharefood_test/Shleper/1ba21681-09c9-4556-ba20-6ea77b9b0a23_normal.jpg'
 // ]
 // deleteFromCloudinary(cloudinaryToDelete)
-module.exports = { uploadToCloudinary, deleteFromCloudinary }
+
+async function uploadUserPictureToCloudinary(userData) {
+    const userPic = ""
+    const userBackPic = ""
+
+    // console.log("uploadUserPictureToCloudinary", userData.profilePicture.base64, userData.backgroundPicture.base64)
+    if (!userData.profilePicture.base64.includes("cloudinary")) {
+        userPic = await cloudinary.uploader.upload(`${userData.profilePicture.base64}`, {
+            folder: `sharefood_test/${userData.userName}`,
+            // public_id: `${recipe.recipeName}_${arrayLength}_normal`,
+            public_id: `${userData.userName}`,
+            transformation: [
+                { width: 90, height: 90, radius: 45, crop: 'fill' }
+                // { gravity: "face:auto", height: 90, radius: 90, width: 90, crop: "crop" }
+            ],
+        });
+    }
+
+    // console.log("uploadUserPictureToCloudinary userPic", userPic)
+
+    if (!userData.backgroundPicture.base64.includes("cloudinary")) {
+        userBackPic = await cloudinary.uploader.upload(`${userData.backgroundPicture.base64}`, {
+            folder: `sharefood_test/${userData.userName}`,
+            public_id: `${userData.userName}_background`,
+            transformation: [
+                { width: 350, height: 150, crop: 'fill' }
+            ],
+        });
+    }
+
+    // console.log("uploadUserPictureToCloudinary userBackPic", userBackPic)
+
+    // console.log({ ...userData, profilePicture: { base64: userPic.secure_url }, backgroundPicture: { base64: userBackPic.secure_url } })
+
+    var result = { ...userData, profilePicture: { base64: userPic.secure_url, path: userData.profilePicture.path }, backgroundPicture: { base64: userBackPic.secure_url, path: userData.backgroundPicture.path } }
+
+    // console.log("Cloudinary Logic uploadUserPictureToCloudinary", result)
+    return result
+}
+module.exports = { uploadToCloudinary, deleteFromCloudinary, uploadUserPictureToCloudinary }

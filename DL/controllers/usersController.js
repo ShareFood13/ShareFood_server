@@ -5,6 +5,8 @@ const jwt = require('jsonwebtoken')
 const JWT_SECRET = process.env.JWT_SECRET
 
 const userModel = require("../../DL/models/userModel")
+const cloudinaryLogic = require("../../BL/cloudinaryLogic")
+
 
 const getUserInfo = async (req, res) => {
     const { _id } = req.params
@@ -124,16 +126,19 @@ const userProfile = async (req, res) => {
     const { _id } = req.params
     // console.log('====================================');
     // console.log("userProfile _id", _id);
-    console.log("userprofile req.body", req.body);
+    // console.log("userprofile req.body", req.body);
     // console.log('====================================');
 
     try {
+        const newProfile = await cloudinaryLogic.uploadUserPictureToCloudinary(req.body)
+        // console.log("userProfile", newProfile)
         const user = await userModel.findOne({ _id })
 
-        // console.log("user", user)
+        // console.log("userProfile user", user)
 
-        const updateUser = { user, name: req.body.name, profile: req.body.profile }
-        // console.log("updateUser", updateUser)
+        const updateUser = { user, name: req.body.name, profile: newProfile }
+
+        // console.log("userProfile updateUser", updateUser)
 
         const result = await userModel.findByIdAndUpdate(_id, updateUser, { new: true })
 
@@ -179,7 +184,8 @@ const startFollowing = async (req, res) => {
         const result = await userModel.findById({ _id: userId })
 
         if (!result.profile.following.includes(follow_id)) {
-            user = await userModel.findByIdAndUpdate(userId, { $push: { 'profile.following': { $each: [follow_id] } } })
+            await userModel.findByIdAndUpdate(userId, { $push: { 'profile.following': { $each: [follow_id] } } })
+            user = await userModel.findById(userId)
         }
 
 
@@ -188,6 +194,8 @@ const startFollowing = async (req, res) => {
         if (!result2.profile.followers.includes(userId)) {
             otherUser = await userModel.findByIdAndUpdate(follow_id, { $push: { 'profile.followers': { $each: [userId] } } })
         }
+        console.log("startFollowing user", user)
+        console.log("startFollowing otherUser", otherUser)
 
         res.status(200).json({ result: user, message: `👍 You start follow ${otherUser.userName}!!!!` })
     } catch (error) {
@@ -197,11 +205,22 @@ const startFollowing = async (req, res) => {
 }
 
 const stopFollowing = async (req, res) => {
+    console.log("stopFollowing", req.body)
+    const { userId, follow_id } = req.body
 
-    const { my_id, follow_id } = req.params
-    console.log({ my_id, follow_id })
+    try {
+        await userModel.findByIdAndUpdate(userId, { $pull: { "profile.following": follow_id } })
+        const user = await userModel.findById(userId)
+        console.log(user)
 
+        const otherUser = await userModel.findByIdAndUpdate(follow_id, { $pull: { "profile.followers": userId } })
 
+        res.status(200).json({ result: user, message: `👍 You stop follow ${otherUser.userName}!!!!` })
+
+    } catch (error) {
+
+        res.status(500).json({ message: "👎 Something went wrong!!!" })
+    }
     // try {
 
     //     const otherUsers = await userModel.find({ _id: { $ne: _id } })

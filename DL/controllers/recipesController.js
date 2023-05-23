@@ -48,7 +48,7 @@ console.log("getMyRecipes id",id)
         const myRecipes = await PostRecipe.find({ creatorId: id })
         // const myRecipes = await PostRecipe.find({ creatorId: id },
         //     { recipeName: 1, likes: 1, specialDiet: 1, downloads: 1, prepTime: 1, cookTime: 1, "recipePicture.small": 1, _id: 1 })
-console.log("getMyRecipes myRecipes",myRecipes)
+// console.log("getMyRecipes myRecipes",myRecipes)
         res.status(200).json({ recipes: myRecipes })
     } catch (error) {
 
