@@ -150,6 +150,29 @@ const userProfile = async (req, res) => {
     }
 }
 
+const userSettings = async (req, res) => {
+    const { _id } = req.params
+    const newSettings = req.body
+
+    try {
+        const user = await userModel.findOne({ _id })
+
+        // console.log("userSettings user", user)
+
+        const updateUser = { user, settings: newSettings }
+
+        // console.log("userSettings updateUser", updateUser)
+
+        const result = await userModel.findByIdAndUpdate(_id, updateUser, { new: true })
+
+        res.status(200).json({ result, message: "👍 Settings saved!!!!" })
+    } catch (error) {
+
+        res.status(500).json({ message: error })
+        // res.status(500).json({ message: "👎 Something went wrong!!!" })
+    }
+}
+
 const userProfileUpdate = async (req, res) => {
     const { _id } = req.params
     console.log('====================================');
@@ -236,4 +259,4 @@ const stopFollowing = async (req, res) => {
 
 
 
-module.exports = { signIn, signUp, changePassword, userProfile, userProfileUpdate, getUserInfo, getOtherUsers, startFollowing, stopFollowing }
+module.exports = { signIn, signUp, changePassword, userProfile, userSettings, userProfileUpdate, getUserInfo, getOtherUsers, startFollowing, stopFollowing }

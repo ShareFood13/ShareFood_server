@@ -23,5 +23,8 @@ router.post("/contactus", mailController.contactUs)
 router.put("/userprofile/:_id", userController.userProfile)
 router.put("/userprofileupdate/:_id", userController.userProfileUpdate)
 
+router.put("/usersettings/:_id", userController.userSettings)
+// router.put("/usersettingsupdate/:_id", userController.userSettingsUpdate)
+
 
 module.exports = router

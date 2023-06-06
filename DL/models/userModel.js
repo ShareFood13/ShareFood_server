@@ -93,7 +93,84 @@ const userSchema = new mongoose.Schema({
         },
         following: [String],
         followers: [String]
-    }
+    },
+    settings: {
+        language: {
+            key: {
+                type: Number,
+                default: 1
+            },
+            label: {
+                type: String,
+                default: "English",
+            },
+            value: {
+                type: String,
+                default: "en",
+            },
+            image: {
+                type: String,
+                default: "us"
+            },
+        },
+        system: {
+            type: String,
+            enum: ['Metric', 'Imperial'],
+            default: "Metric",
+        },
+        theme: {
+            type: String,
+            enum: ['Light', 'Dark'],
+            default: "Light",
+        },
+        recipesStatus: {
+            type: String,
+            enum: ['Public', 'Private'],
+            default: "Public",
+        },
+        mealsStatus: {
+            type: String,
+            enum: ['Public', 'Private'],
+            default: "Public",
+        },
+        eventsStatus: {
+            type: String,
+            enum: ['Public', 'Private'],
+            default: "Public",
+        },
+        globalStatus: {
+            type: String,
+            enum: ['Public', 'Private'],
+            default: "Public",
+        },
+        showAbout: {
+            type: String,
+            enum: ['Public', 'Private'],
+            default: "Public",
+        },
+        notifications: {
+            type: Boolean,
+            default: true,
+        },
+        security: {
+            type: Boolean,
+            default: true,
+        },
+        ads: {
+            type: Boolean,
+            default: true,
+        },
+        fontStyle: {
+            type: String,
+            default: 'Montserrat',
+        },
+        myBookPag: {
+            type: String,
+            enum: ['Default', 'Custom'],
+            default: "Default",
+        },
+        customFilter: [String]
+    },
 })
 
 const User = mongoose.model("User", userSchema)
